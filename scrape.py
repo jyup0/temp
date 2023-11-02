@@ -287,7 +287,6 @@ def summarize_text(text):
 # Function to extract and summarize text from each page of a PDF
 def summarize_pdf(pdf_path):
     summarized_pages = []
-
     # Open the PDF file and extract text from each page
     with open(pdf_path, "rb") as pdf_file:
         pdf_reader = PyPDF2.PdfReader(pdf_file)
@@ -361,7 +360,7 @@ def main():
         st.write("running analysis on: ", IndividualPublicComment)
         download_individual_public_comment(commenturl, IndividualPublicComment)
         DownloadRulePDF(commenturl)
-        
+        print(os.listdir("temp//"))
         for file in os.listdir("temp"):
             pdf_file = "temp\\" + file
             csv_file = "temp\\" + file + ".csv"
@@ -369,7 +368,7 @@ def main():
                 pdf_text = extract_text_from_pdf(pdf_file)
                 text_to_csv(pdf_text, csv_file)
             elif file == "rule.pdf" and file != "hold.txt":
-                dict = convert_rule_csv(pdf_file, "temp\\rule.pdf.csv")
+                convert_rule_csv(pdf_file, "temp\\rule.pdf.csv")
         for file in os.listdir("temp\\"):
             if file.lower().endswith('.csv') and file != "rule.pdf.csv":
                 csv_file1 = "temp\\"+file
