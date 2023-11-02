@@ -5,3 +5,4 @@ pandas
 streamlit
 sentence_transformers
 spacy
+st-annotated-text
