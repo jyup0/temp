@@ -362,8 +362,8 @@ def main():
         DownloadRulePDF(commenturl)
         for file in os.listdir("temp"):
             print(file)
-            pdf_file = f"temp\{file}"
-            csv_file = f"temp\{file}.csv"
+            pdf_file = rf"temp\{file}"
+            csv_file = rf"temp\{file}.csv"
             if file != "rule.pdf" and file != "hold.txt":
                 pdf_text = extract_text_from_pdf(pdf_file)
                 text_to_csv(pdf_text, csv_file)
