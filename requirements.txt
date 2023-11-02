@@ -1,7 +1,6 @@
 requests
 bs4
 PyPDF2
-os
 pandas
 streamlit
 sentence_transformers
