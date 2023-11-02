@@ -384,15 +384,6 @@ def main():
                         if row == sentence1:
                             match.append(row)
 
-                            # Initialize a variable to store the matching key
-                            matching_key = None
-
-                            # Iterate through the dictionary items
-                            for key, value in dict.items():
-                                if value == sentence2:
-                                    matchlink.append(key)
-
-
                     list = [similarity, sentence1, sentence2]
                     with open('Results.csv', 'a') as f_object:
                         # Pass this file object to csv.writer()
