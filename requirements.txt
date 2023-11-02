@@ -1,7 +1,6 @@
 requests
 bs4
 PyPDF2
-csv
 os
 pandas
 streamlit
