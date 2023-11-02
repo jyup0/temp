@@ -361,13 +361,13 @@ def main():
         download_individual_public_comment(commenturl, IndividualPublicComment)
         DownloadRulePDF(commenturl)
         
-        for file in os.listdir("temp") and file != "hold.txt":
+        for file in os.listdir("temp"):
             pdf_file = "temp\\" + file
             csv_file = "temp\\" + file + ".csv"
-            if file != "rule.pdf":
+            if file != "rule.pdf" and file != "hold.txt":
                 pdf_text = extract_text_from_pdf(pdf_file)
                 text_to_csv(pdf_text, csv_file)
-            elif file == "rule.pdf":
+            elif file == "rule.pdf" and file != "hold.txt":
                 dict = convert_rule_csv(pdf_file, "temp\\rule.pdf.csv")
         for file in os.listdir("temp\\"):
             if file.lower().endswith('.csv') and file != "rule.pdf.csv":
