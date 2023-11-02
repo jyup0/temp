@@ -5,5 +5,3 @@ pandas
 streamlit
 sentence_transformers
 spacy
-annotated_text
-shutil
