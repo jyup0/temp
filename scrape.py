@@ -360,8 +360,8 @@ def main():
         st.write("running analysis on: ", IndividualPublicComment)
         download_individual_public_comment(commenturl, IndividualPublicComment)
         DownloadRulePDF(commenturl)
-        print(os.listdir())
         for file in os.listdir("temp"):
+            print(file)
             pdf_file = "temp\\" + file
             csv_file = "temp\\" + file + ".csv"
             if file != "rule.pdf" and file != "hold.txt":
