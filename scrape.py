@@ -73,7 +73,7 @@ def DownloadPublicComments(url):
                 # Check if the PDF download was successful (status code 200)
                 if pdf_response.status_code == 200:
                     # Save the PDF file locally
-                    with open("Temp/"+pdf_url, 'wb') as pdf_file:
+                    with open("temp/"+pdf_url, 'wb') as pdf_file:
                         pdf_file.write(pdf_response.content)
                         print("PDF downloaded successfully.")
                 else:
@@ -109,7 +109,7 @@ def DownloadRulePDF(RuleURL):
                 # Check if the PDF download was successful (status code 200)
                 if pdf_response.status_code == 200:
                     # Save the PDF file locally
-                    with open("Temp/rule.pdf", 'wb') as pdf_file:
+                    with open("temp/rule.pdf", 'wb') as pdf_file:
                         pdf_file.write(pdf_response.content)
                         print("PDF downloaded successfully.")
                 else:
@@ -255,7 +255,7 @@ def download_individual_public_comment(PublicCommentLink, IndividualComment):
                 # Check if the PDF download was successful (status code 200)
                 if pdf_response.status_code == 200:
                     # Save the PDF file locally
-                    with open("Temp/"+pdf_url, 'wb') as pdf_file:
+                    with open("temp/"+pdf_url, 'wb') as pdf_file:
                         pdf_file.write(pdf_response.content)
                         print("PDF downloaded successfully.")
             else:
@@ -361,18 +361,18 @@ def main():
         download_individual_public_comment(commenturl, IndividualPublicComment)
         DownloadRulePDF(commenturl)
         
-        for file in os.listdir("Temp\\"):
-            pdf_file = "Temp\\" + file
-            csv_file = "Temp\\" + file + ".csv"
+        for file in os.listdir("temp\\"):
+            pdf_file = "temp\\" + file
+            csv_file = "temp\\" + file + ".csv"
             if file != "rule.pdf":
                 pdf_text = extract_text_from_pdf(pdf_file)
                 text_to_csv(pdf_text, csv_file)
             elif file == "rule.pdf":
-                dict = convert_rule_csv(pdf_file, "Temp\\rule.pdf.csv")
-        for file in os.listdir("Temp\\"):
+                dict = convert_rule_csv(pdf_file, "temp\\rule.pdf.csv")
+        for file in os.listdir("temp\\"):
             if file.lower().endswith('.csv') and file != "rule.pdf.csv":
-                csv_file1 = "Temp\\"+file
-                csv_file2 = "Temp\\rule.pdf.csv"
+                csv_file1 = "temp\\"+file
+                csv_file2 = "temp\\rule.pdf.csv"
                 similarity_threshold = 0.5  # Adjust as needed (might need to increase)
                 result = find_most_similar_sentences(csv_file1, csv_file2, similarity_threshold)
                 st.header(IndividualPublicComment)
@@ -413,7 +413,7 @@ def main():
                     else:
                         st.write(row)
 
-                clear_directory("C:\\Users\\Ethan\\Prototyping\\Temp")
+                clear_directory("\\temp")
 
 if __name__ == "__main__":
     main()
