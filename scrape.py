@@ -340,6 +340,7 @@ def clear_directory(directory_path):
         print(f"An error occurred while clearing the directory: {str(e)}")
 
 def main():
+    clear_directory("\\temp")
     #create variable to hold the main url
     indexHTML = url + index
     
@@ -368,8 +369,6 @@ def main():
                 pdf_text = extract_text_from_pdf(pdf_file)
                 text_to_csv(pdf_text, csv_file)
             elif file == "rule.pdf" and file != "hold.txt":
-                dire = os.listdir("temp")
-                print(dire)
                 dict = convert_rule_csv(pdf_file, "temp\\rule.pdf.csv")
         for file in os.listdir("temp\\"):
             if file.lower().endswith('.csv') and file != "rule.pdf.csv":
