@@ -368,7 +368,7 @@ def main():
                 pdf_text = extract_text_from_pdf(pdf_file)
                 text_to_csv(pdf_text, csv_file)
             elif file == "rule.pdf" and file != "hold.txt":
-                convert_rule_csv(pdf_file, "temp/rule.pdf.csv")
+                convert_rule_csv(pdf_file, "temprule.pdf.csv")
         for file in os.listdir("temp"):
             if file.lower().endswith('.csv') and file != "rule.pdf.csv":
                 csv_file1 = "temp/"+file
@@ -383,6 +383,11 @@ def main():
                     for row in Commentdf["text"]:
                         if row == sentence1:
                             match.append(row)
+                            # Iterate through the dictionary items
+                            for key, value in dict.items():
+                                if value == sentence2:
+                                    matchlink.append(key)
+
 
                     list = [similarity, sentence1, sentence2]
                     with open('Results.csv', 'a') as f_object:
