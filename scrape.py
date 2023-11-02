@@ -339,7 +339,7 @@ def clear_directory(directory_path):
         print(f"An error occurred while clearing the directory: {str(e)}")
 
 def main():
-    clear_directory("\\temp")
+    clear_directory("temp")
     #create variable to hold the main url
     indexHTML = url + index
     
