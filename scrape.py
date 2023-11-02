@@ -11,6 +11,9 @@ from sentence_transformers import SentenceTransformer, util
 import spacy
 from annotated_text import annotated_text
 import shutil
+import subprocess
+
+subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
 
 # URL of the website you want to scrape
 url = 'http://www.fdic.gov/resources/regulations/federal-register-publications/'
