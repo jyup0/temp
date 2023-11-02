@@ -11,7 +11,7 @@ from sentence_transformers import SentenceTransformer, util
 import spacy
 from annotated_text import annotated_text
 import shutil
-
+from os import walk
 # URL of the website you want to scrape
 url = 'http://www.fdic.gov/resources/regulations/federal-register-publications/'
 
@@ -360,7 +360,7 @@ def main():
         st.write("running analysis on: ", IndividualPublicComment)
         download_individual_public_comment(commenturl, IndividualPublicComment)
         DownloadRulePDF(commenturl)
-        print(os.listdir("temp//"))
+        print(os.listdir())
         for file in os.listdir("temp"):
             pdf_file = "temp\\" + file
             csv_file = "temp\\" + file + ".csv"
