@@ -370,10 +370,10 @@ def main():
                 text_to_csv(pdf_text, csv_file)
             elif file == "rule.pdf" and file != "hold.txt":
                 convert_rule_csv(pdf_file, "temp\rule.pdf.csv")
-        for file in os.listdir("temp\\"):
+        for file in os.listdir("temp"):
             if file.lower().endswith('.csv') and file != "rule.pdf.csv":
-                csv_file1 = "temp\\"+file
-                csv_file2 = "temp\\rule.pdf.csv"
+                csv_file1 = "temp/"+file
+                csv_file2 = "temp/rule.pdf.csv"
                 similarity_threshold = 0.5  # Adjust as needed (might need to increase)
                 result = find_most_similar_sentences(csv_file1, csv_file2, similarity_threshold)
                 st.header(IndividualPublicComment)
