@@ -362,14 +362,13 @@ def main():
         DownloadRulePDF(commenturl)
         for file in os.listdir("temp"):
             print(file)
-            tem = r"temp/"
             pdf_file = f"temp/{file}"
             csv_file = f"temp/{file}.csv"
             if file != "rule.pdf" and file != "hold.txt":
                 pdf_text = extract_text_from_pdf(pdf_file)
                 text_to_csv(pdf_text, csv_file)
             elif file == "rule.pdf" and file != "hold.txt":
-                convert_rule_csv(pdf_file, "temp\rule.pdf.csv")
+                convert_rule_csv(pdf_file, "temp/rule.pdf.csv")
         for file in os.listdir("temp"):
             if file.lower().endswith('.csv') and file != "rule.pdf.csv":
                 csv_file1 = "temp/"+file
