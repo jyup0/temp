@@ -361,7 +361,7 @@ def main():
         download_individual_public_comment(commenturl, IndividualPublicComment)
         DownloadRulePDF(commenturl)
         
-        for file in os.listdir("temp\\"):
+        for file in os.listdir("temp"):
             pdf_file = "temp\\" + file
             csv_file = "temp\\" + file + ".csv"
             if file != "rule.pdf":
