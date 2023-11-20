@@ -347,7 +347,7 @@ def main():
 
     SelectedRule = st.sidebar.selectbox("Select The Ruleset For the Public Comments", OpenRules)
     #Download any public comments not currently downloaded under the ruleset
-    
+    commenturl = 'http://www.fdic.gov/resources/regulations/federal-register-publications/'+SelectedRule
     DownloadRulePDF(commenturl)
     #get number of pages in the rule document
     with open(SelectedRule, 'rb') as file:
@@ -360,7 +360,7 @@ def main():
     SelectedPage = st.sidebar.selectbox("Select The Page Number to Match Public Commetns Agains", [pagenumarr])
     
     if SelectedRule and not GroupToggle:
-        commenturl = 'http://www.fdic.gov/resources/regulations/federal-register-publications/'+SelectedRule
+        
         Comments = get_individual_comments(commenturl)
         IndividualPublicComment = st.sidebar.selectbox("Select the Public Comment Below", Comments)
 
