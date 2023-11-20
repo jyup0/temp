@@ -350,7 +350,7 @@ def main():
     GroupToggle = st.sidebar.toggle("Run Analysis on All Comments for Ruleset")
 
     #get number of pages in the rule document
-    with open(OpenRules, 'rb') as file:
+    with open(SelectedRule, 'rb') as file:
         pdf_reader = PyPDF2.PdfFileReader(file)
         page_count = pdf_reader.numPages
     
