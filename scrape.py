@@ -345,12 +345,19 @@ def main():
     
     OpenRules = get_open_rules(indexHTML)
 
-    #working on streamlit
     SelectedRule = st.sidebar.selectbox("Select The Ruleset For the Public Comments", OpenRules)
 
     GroupToggle = st.sidebar.toggle("Run Analysis on All Comments for Ruleset")
 
-    temp = st.sidebar.selectbox("Select The Topic Issue For the Public Comments", OpenRules)
+    #get number of pages in the rule document
+    with open(OpenRules, 'rb') as file:
+        pdf_reader = PyPDF2.PdfFileReader(file)
+        page_count = pdf_reader.numPages
+    
+    pagenumarr = [i for i in range(1, page_count + 1)]
+
+    #Sort By Page Number of the Rule
+    SelectedPage = st.sidebar.selectbox("Select The Page Number to Match Public Commetns Agains", [pagenumarr])
     
     if SelectedRule and not GroupToggle:
         commenturl = 'http://www.fdic.gov/resources/regulations/federal-register-publications/'+SelectedRule
