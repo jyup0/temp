@@ -350,7 +350,7 @@ def main():
     commenturl = 'http://www.fdic.gov/resources/regulations/federal-register-publications/'+SelectedRule
     DownloadRulePDF(commenturl)
     #get number of pages in the rule document
-    with open("temp/{SelectedRule}", 'rb') as file:
+    with open("temp/{commenturl}", 'rb') as file:
         pdf_reader = PyPDF2.PdfFileReader(file)
         page_count = pdf_reader.numPages
     
