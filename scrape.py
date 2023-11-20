@@ -109,7 +109,7 @@ def DownloadRulePDF(RuleURL):
                 # Check if the PDF download was successful (status code 200)
                 if pdf_response.status_code == 200:
                     # Save the PDF file locally
-                    with open("temp/rule.pdf", 'wb') as pdf_file:
+                    with open("temp/{RuleURL}", 'wb') as pdf_file:
                         pdf_file.write(pdf_response.content)
                         print("PDF downloaded successfully.")
                 else:
@@ -350,7 +350,7 @@ def main():
     commenturl = 'http://www.fdic.gov/resources/regulations/federal-register-publications/'+SelectedRule
     DownloadRulePDF(commenturl)
     #get number of pages in the rule document
-    with open(SelectedRule, 'rb') as file:
+    with open("temp/{SelectedRule}", 'rb') as file:
         pdf_reader = PyPDF2.PdfFileReader(file)
         page_count = pdf_reader.numPages
     
