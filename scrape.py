@@ -346,9 +346,9 @@ def main():
     OpenRules = get_open_rules(indexHTML)
 
     SelectedRule = st.sidebar.selectbox("Select The Ruleset For the Public Comments", OpenRules)
-
-    GroupToggle = st.sidebar.toggle("Run Analysis on All Comments for Ruleset")
-
+    #Download any public comments not currently downloaded under the ruleset
+    
+    DownloadRulePDF(commenturl)
     #get number of pages in the rule document
     with open(SelectedRule, 'rb') as file:
         pdf_reader = PyPDF2.PdfFileReader(file)
@@ -368,7 +368,6 @@ def main():
     if RunAnalysis and not GroupToggle:
         st.write("running analysis on: ", IndividualPublicComment)
         download_individual_public_comment(commenturl, IndividualPublicComment)
-        DownloadRulePDF(commenturl)
         for file in os.listdir("temp"):
             print(file)
             pdf_file = f"temp/{file}"
