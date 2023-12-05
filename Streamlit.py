@@ -117,7 +117,6 @@ def main():
     index = 'index.html'
     indexHTML = url + index
     OpenRules = get_open_rules(indexHTML)
-    st.write(OpenRules)
 
     SelectedRule = st.sidebar.selectbox("Select The Ruleset For the Public Comments", OpenRules)
     
