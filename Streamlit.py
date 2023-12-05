@@ -12,6 +12,7 @@ def DisplayRuleInfo(SelectedRule):
     DirPath = "temp/" + CleanedRule
     DirRPath = DirPath+"/Results/"
     DirRule = DirPath+"/"+CleanedRule+".csv"
+    print(os.listdir(DirRPath))
     Ruledf = pd.read_csv(DirRule)
     MatchedPages = []
     columns = ['FileName', 'PageNumber']
@@ -19,15 +20,18 @@ def DisplayRuleInfo(SelectedRule):
 
     #loop through each file in the results directory
     for file in os.listdir(DirRPath):
-        Resultdf = pd.read_csv(DirRPath+file)
-        for _, row1 in Resultdf.iterrows():
-            for index, row2 in Ruledf.iterrows():
-                CommentRule = str(row1[1])
-                RulePage = str(row2["text"])
-                if CommentRule == RulePage:
-                    MatchedPages.append(index+1)
-                    new_row = [file, index]
-                    df.loc[len(df)] = new_row
+        try:
+            Resultdf = pd.read_csv(DirRPath+file)
+            for _, row1 in Resultdf.iterrows():
+                for index, row2 in Ruledf.iterrows():
+                    CommentRule = str(row1.iloc[1])
+                    RulePage = str(row2["text"])
+                    if CommentRule == RulePage:
+                        MatchedPages.append(index+1)
+                        new_row = [file, index]
+                        df.loc[len(df)] = new_row
+        except:
+            print("an error has occured for file "+ file)
                     
     #Create dashboard
     st.title("Info For: " + CleanedRule)
@@ -60,17 +64,19 @@ def MakeDF(SelectedRule):
     df = pd.DataFrame(columns=columns)
 
     #loop through each file in the results directory
-    for file in os.listdir(DirRPath):
-        Resultdf = pd.read_csv(DirRPath+file)
-        for _, row1 in Resultdf.iterrows():
-            for index, row2 in Ruledf.iterrows():
-                CommentRule = str(row1[1])
-                RulePage = str(row2["text"])
-                if CommentRule == RulePage:
-                    MatchedPages.append(index+1)
-                    new_row = [file, index]
-                    df.loc[len(df)] = new_row
-    
+    try:
+        for file in os.listdir(DirRPath):
+            Resultdf = pd.read_csv(DirRPath+file)
+            for _, row1 in Resultdf.iterrows():
+                for index, row2 in Ruledf.iterrows():
+                    CommentRule = str(row1.iloc[1])
+                    RulePage = str(row2["text"])
+                    if CommentRule == RulePage:
+                        MatchedPages.append(index+1)
+                        new_row = [file, index]
+                        df.loc[len(df)] = new_row
+    except:
+        print("File could not be added to df")
     return df
 
 def ShowPage(SelectedRule, SelectedPage, df):
@@ -82,13 +88,15 @@ def ShowPage(SelectedRule, SelectedPage, df):
     Ruledf = pd.read_csv(DirRule)
     
     Matchingdf = df[df['PageNumber'] == SelectedPage]
-    st.write(Matchingdf)
+
     unique_values = Matchingdf['FileName'].unique()
 
     #create the page for ther user
-    st.subheader("Abreiviated Page")
-    ruletext = str(Ruledf.iloc[SelectedPage])
-    st.text(ruletext)
+    st.header("Page "+str(SelectedPage)+" Abreviated")
+    ruletext = str(Ruledf["text"].values[SelectedPage])
+    st.write(ruletext)
+
+    st.divider()
     st.subheader("Matching Public Comments")
     for comment in unique_values:
         
