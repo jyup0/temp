@@ -121,7 +121,7 @@ def ShowPage(SelectedRule, SelectedPage, df):
 
 def run_external_script():
     # Replace 'external_script.py' with the actual name of your external script
-    script_path = 'C:\Users\Ethan\temp\temp\PublicCommentAnalysis.py'
+    script_path = 'PublicCommentAnalysis.py'
 
     # Run the external script using subprocess
     subprocess.run(['python', script_path])
