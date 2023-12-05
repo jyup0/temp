@@ -4,7 +4,7 @@ import numpy as np
 import streamlit as st
 #import the PublicComment Analysis script
 from PublicCommentAnalysis import get_open_rules, CleanRule
-    
+import subprocess
 
 def DisplayRuleInfo(SelectedRule):
     #first we need to create the variables to pull data from our files
@@ -119,6 +119,14 @@ def ShowPage(SelectedRule, SelectedPage, df):
             file_name=comment,
         )
 
+def run_external_script():
+    # Replace 'external_script.py' with the actual name of your external script
+    script_path = 'C:\Users\Ethan\temp\temp\PublicCommentAnalysis.py'
+
+    # Run the external script using subprocess
+    subprocess.run(['python', script_path])
+
+
 #first we will create the page
 def main():
     url = 'http://www.fdic.gov/resources/regulations/federal-register-publications/'
@@ -152,6 +160,11 @@ def main():
             data=document,
             file_name=CleanedRule+".pdf",
         )
+    
+    if st.sidebar.button("Run Adhoc Script"):
+        st.write("Running Adhoc script...")
+        run_external_script()
+        st.write("External Adhoc executed!")
             
 
 if __name__ == "__main__":
