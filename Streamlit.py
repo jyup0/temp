@@ -134,6 +134,11 @@ def main():
     indexHTML = url + index
     OpenRules = get_open_rules(indexHTML)
 
+    if st.sidebar.button("Run Adhoc Script"):
+      st.write("Running Adhoc script...")
+      run_external_script()
+      st.write("External Adhoc executed!")
+
     SelectedRule = st.sidebar.selectbox("Select The Ruleset For the Public Comments", OpenRules)
     
     IndividualPageAnalysis = st.sidebar.toggle("Analyze by Page")
@@ -161,10 +166,7 @@ def main():
             file_name=CleanedRule+".pdf",
         )
     
-    if st.sidebar.button("Run Adhoc Script"):
-        st.write("Running Adhoc script...")
-        run_external_script()
-        st.write("External Adhoc executed!")
+
             
 
 if __name__ == "__main__":
