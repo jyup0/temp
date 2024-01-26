@@ -1,0 +1,206 @@
+text
+ 
+ 
+ 
+About the Association 
+"The mission of the New York City Bar Association, which was founded in 1870 and has 25,000 members, is to equip "
+"and mobilize a diverse legal profession to practice with excellence, promote reform of the law, and uphold the rule of law and access to justice in support of a fair society and the public interest in our community, our nation, and "
+throughout the world.   
+ 
+THE ASSOCIATION OF THE BAR OF THE CITY OF NEW YORK 
+"42 West 44th Street, New York, NY 10036-6689    "
+www.nycbar.org  
+COMPLIANCE COMMITTEE  
+ 
+PATRICK T. CAMPBELL  
+CHAIR  
+pcampbell@bakerlaw.com    
+A
+DAM FELSENTHAL  
+SECRETARY  
+afelsenthal@gppfunds.com   
+   
+ 
+"        April 12, 2021 Via Electronic Submission "
+"  Re:  RIN 1557-AF02 (OCC), 7100-AF (Board) , 3064-AF59 (FDIC); Computer-Security "
+Incident Notification Requirements for Banking Organizations and Their Bank 
+Service Providers; Docket ID OCC-2020-0038 
+ 
+The New York City Bar Association’s Compliance Committee (the “Compliance 
+Committee”) submits this letter in  response to the request of the Office of the Comptroller of the 
+"Currency, the Board of the Governors of the Fe deral Reserve System, and the Federal Deposit "
+"Insurance Corporation (together , the “Agencies”) for comment about the Notice of Proposed "
+"Rulemaking (the “Proposed Rule” or “Pr oposal”) published on Janua ry 12, 2021. The Proposal "
+seeks to require a banking orga nization to provide its primary federal regulator with prompt 
+notification of any signifi cant “computer-security incident” that  could jeopardize the viability of 
+"its operations, which the Proposal refers to as a “notification incident.” The Compliance "
+"Committee has a diverse membership that includes  attorneys from law firms, in-house counsel, "
+"compliance professionals at various financial ins titutions, as well as representatives of regulatory "
+and governmental agencies.   I. SUMMARY 
+" At the outset, the Compliance Committee notes  that it supports the Agencies’ stated "
+"objectives for the Proposed Rule, which include providing the Agencies with earlier awareness "
+of cybersecurity incidents that  may so severely impact a banki ng organization that it can no 
+"longer support its customers and could impact its safety and soundne ss, leading to its failure.  "
+"The sooner the Agencies know of a cybersecurity ev ent, the better they can assess the extent of "
+the threat and take appropriate action; provide information to a banking organization that may  
+2 not have previously faced a par ticular type of notification inci dent; and conduct analyses across 
+"supervised banking organizations to improve guidance, adjust s upervisory programs, and provide "
+information to the industry to help banki ng organizations protect themselves.   
+ 
+The Compliance Committee shares the Agencies ’ concern about the unique threats the 
+"current cyber risk landscape poses for the bank ing industry, including th e increasing reliance by "
+banking organizations on bank service providers to provide essential technology-related products 
+and services. The Compliance Committee also recognizes that notification regimes currently required under the Gramm-Leach-Bliley Act a nd the Bank Secrecy Act do not provide the 
+Agencies with information on cyber incidents affecting banking organi zation operations more 
+broadly.  
+ The Compliance Committee concurs that earl y notice to regulators is of critical 
+importance. Regulators are the monitors of banking organization safety and soundness and 
+should be informed of material security even ts and remedial effort s being undertaken. In 
+"addition, the provision of prompt no tice is critical for regulators to monitor the banking sector "
+and evaluate overall threats thereto. The SolarW inds attack demonstrat es the importance of 
+notice – numerous interrelated private and public entities and their third parties were compromised by a nation state actor. The breadth of this attack demonstrates the need for 
+regulators to be informed and help ensure best practices are bein g applied throughout the 
+regulated community to  address the risks. 
+ Most bank organizations have compliance pr ograms in place to address information 
+"security, incident response, busin ess continuity, and vendor manage ment and to periodically test "
+"these programs through risk a ssessments and tabletop exercise s. However, aspects of the "
+"Proposed Rule, specifically  the definitions and mate riality of reportable s ecurity incidents, will "
+"present an increased compliance burden for bank ing organizations, while providing the Agencies "
+"with notice of far too many security incidents that, at 36 hours out, could, but may not ultimately, "
+have a significant impact on operations. The Compliance Committee makes the following 
+recommendations to limit the not ification requirement to high-th reshold cybersecurity incidents 
+"that materially impact operations. As amended, the Proposed Rule will provide opportunity for "
+bank organizations to continue to enhance their risk assessme nt practices and governance via a 
+"reevaluation and updating of their incident re sponse, business continuity, and vendor risk "
+"management programs, while providing the Agenci es with meaningful information to manage "
+cyber threat risks that better  aligns with their stated obj ectives in the Proposed Rule. 
+ 
+The Agencies seek comments on “all aspects of their proposal” and specifically on 16 
+questions. This letter provides comments on the following issues covered by five questions: (i) 
+"applicable definitions and standards triggering th e notice requirement (questions 1, 2, 4 and 15), "
+and (ii) the form and met hod of notice (question 5). 
+       
+3 II. THE COMPLIANCE COMMI TTEE’S COMMENTS TO THE PROPOSED RULE  
+ A. Proposed Definitions and Standards  
+ 
+Questions 1 and 2 inquire how the definitions of “computer-security incident” and 
+"“notification incident” should be modified, if at all. Question 4 asks whether the “believe in good "
+faith” standard is sufficiently clear.  
+The Proposed Rule would define a computer-security incident  as  
+"an occurrence that (i) results in actual or potential harm  to the confidentiality, integrity "
+"or availability of an information system or the information the syst em processes, stores, "
+or transmits; or (ii) constitutes a violation or imminent threat of violation  of security 
+"policies, security procedures , or acceptable use policies. "
+Defining computer-security inci dent to include potential ha rm is a definition that is 
+"common and appropriate for the sc ope of a cybersecurity program. Of course, it is critical to "
+create a program to defend against potential threats and a good cybersecurity program will 
+analyze threats that have been and that c ould be impactful on an organization. That would 
+include both the threats that have been initiate d against a particular or ganization and those that 
+"are being seen in the market at large. In addition, as proposed by the rule, it is appropriate for a "
+bank service provider to be required to alert a banking institution to foreseeable threats and 
+outages.
+"1 However, as described below, the definiti on of computer-security incident for purposes "
+of regulatory notice should be narrower.   
+The Proposed Rule would define a notification incident  as  
+a computer-security incident  that a banking organization believes in good faith  could  
+"materially  disrupt, degrade or impair  - "
+"the ability of the banking organization to carry out banki ng operations, activities, "
+"or processes, or deliver banking products and services to a material portion of its "
+"customer base, in the ordi nary course of business; "
+"any business line of a banking organiza tion, including associated operations, "
+"services, functions and support,  and would result in a ma terial loss of revenue, "
+"profit, or franchise value; or "
+"those operations of a banking organizati on, including asso ciated services, "
+"functions and support, as applicable, the failure or discontinuance of which would pose a threat to the fi nancial stability of the U.S. "
+ 
+1 This comment letter does not take a position regarding th e required notice bank service providers should provide to 
+banking organizations either by rule or by contract. Such relationships can be critical to the financial infrastructure 
+and are often factually distinct.  
+4 As soon as possible and no later than 36 hour s after a banking orga nization believes in 
+good faith that it has experienced a computer-securi ty incident that rises to the level of a 
+"notification incident, the Proposal  would require the banking orga nization to notify its primary "
+regulator. 
+"In response, the Compliance Committee recommends that th e definition of computer-"
+security incident for regulatory notice purposes be modified to be  limited to an occurrence that 
+"results in actual harm  to applicable information and systems, or that results in actual violation  "
+of applicable security policies. The Complian ce Committee also recommends that the definition 
+of notification incident be modified to appl y to a computer-security  incident the banking 
+"organization “believes in good faith has materially disrupted, de graded or impaired” its "
+"operations, revenues or wider financial sector stability. Limiting regulatory notification to "
+incidents that have materially ha rmed or violated the security of  an organization meets the stated 
+"objectives of the Proposed Rule to provide the Ag encies with early alert of significant, high-"
+threshold security incidents so that the Agenci es can assist the impacted organization to respond 
+and recover as well as provide the Agencies with insight for ta king action to bolster the wider 
+sector. 
+"Unfortunately, cybersecurity threats against financial institutions are occurring with "
+significant frequency. A fulsome cy bersecurity program must consta ntly be following threats and 
+threat intelligence and analyzing potential thre ats against the organiza tion to improve systems 
+and its defensive posture. Organizations routinely acquire threat intelligence information from a variety of sources for their cybe rsecurity programs and actual thre ats against the organization are 
+"just a part of its threat intelligence analysis . However, analyzing threat intelligence for purposes "
+of reporting it to regulators w ould add an unnecessary layer to th e evaluative process that could 
+take time and energy away from protective operations and woul d result in notifications to 
+"regulators beyond the intended pur pose of the Proposed Rule. Re porting to regulators actual, "
+"rather than potential, events is a sensible requirement to enable the regulator to have visibility "
+into events that may threaten the safety and s oundness of the institution. A regulator’s review of 
+a banking organization’s overall eval uation and analysis of threats to the organization are better 
+conducted in the context of an examination during which the regulator can observe the 
+"organization’s threat evaluation pr ocess as a whole, rather than  a point in time threat.   "
+The Compliance Committee supports tying the “believes in good faith” subjective 
+"standard to an event that has actually occurr ed and materially impacted  operations, revenues or "
+wider financial stability. It is appropriate to incl ude a materiality standard as there is no one-size-
+fits-all assessment of the serious ness of a cybersecurity attac k. Different banking organizations 
+have different capabilities and pr oducts and the likelihood of an  event endangering safety and 
+soundness will differ for different institutions. Th at evaluation is best made by the banking 
+organization and there is no regul atory benefit to s econd guessing an or ganization’s good faith 
+judgment. The Compliance Committ ee supports the risk-based rather than one-size-fits-all 
+approach. 
+The Compliance Committee notes that th e Proposed Rule’s 36 hour notification 
+requirement is substantially shorter than th e 72 hour notification requirements under the EU’s  
+5 General Data Protection Regulat ion and the New York State Depa rtment of Fina ncial Services 
+requirement under its cy bersecurity regulation.2 Given the compliance burdens posed in meeting 
+"varied timeframe reporting requirements, the Agen cies should consider the universe of banking "
+organizations that would be subj ect to these varied requirements in determining an appropriate 
+and streamlined advance notification timeframe.  
+Question 15 invites comment on specific exampl es of computer-security incidents that 
+"should, or should not, constitute notification in cidents. The Committee reviewed the proposed "
+non-exhaustive list of “notificati on incidents” under the revised definitions in its response to 
+"Question 1 and 2, above, to determine if they ri se to the level of “actual harm,” “actual "
+"violation,” or an incident that “has” occurred. Some proposed “notif ications incidents” as drafted "
+"do not meet those standards. Specifically, th e use of subjective periods of time, e.g., "
+"“undeterminable” and “extended period of time” outlined in in cidents 2 and 5, respectively, do "
+not provide sufficient guidance on wh ether a notification incident wo uld rise to the level of an 
+actual harm or violation of secu rity standards. The Compliance Committee appreciates the clarity 
+"provided by incident 1 with respect to a defined time period, i.e., “more than 4 hours.” It is recommended that an objective timeframe be established for all incidents that include a time period element. Additionally, the Committee finds that incident 7 is captured by incident 2 "
+and/or is duplicative of various fede ral and state breach notification laws.  
+B.  Proposed Method of Notifying the Agencies 
+ 
+Question 5 asks how banking organization notification should be provided to the 
+"Agencies. According to the Proposed Rule, a ba nking organization only n eeds to share general "
+information about what is known at the time and doe s not prescribe the contents to be included in 
+"the notice nor any particular format – “any form of written or oral comm unication, via email or "
+"phone, to a designated point of contact identi fied by the Agencies is sufficient.”  "
+The Compliance Committee agrees that the cont ents of the notifica tion provided to the 
+"Agencies not be prescribed; however, to  reduce the compliance burden for banking "
+"organizations, the Compliance Committee urges th e Agencies to adopt an easy-to-follow, "
+"streamlined, and secure form and method of notif ying the Agencies. Given th at the notification is "
+meant to serve only as an early alert to regulato rs and is not intended to  provide any “assessment 
+"of the incident,” the Compli ance Committee supports creation of  a form and method of notice "
+that is streamlined across the Agencies via a highly secure delivery system to protect the 
+extremely sensitive notification being conveyed.  The Compliance Commit tee also recommends 
+that any form of notice and delivery system be optional and not mandatory given that security 
+"incidents impact organizations in  different ways, and in some ca ses may interfere with access to "
+"the particular system provided for notice. In su ch cases, organizations should not be penalized "
+for failing to use a particular system  so long as good faith notice is made. 
+    
+ 
+2 Regulation (EU) 2016/679 (General Data  Protection Regulation); 23 NYCRR Part 500. 6 * * *
+The Compliance Committee appreciates the oppo
+rtunity to comment on the Proposed 
+"Rule. If we can be of further assistance in th is regard, please feel  free to contact us. "
+"Respectfully submitted, "
+Patrick T. Campbell 
+"Chair, Compliance Committee "
+Drafting Subcommittee: 
+Heather McArn 
+Samara Yousif Andrew Tobel Michael Savicki 
+""

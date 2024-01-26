@@ -119,13 +119,6 @@ def ShowPage(SelectedRule, SelectedPage, df):
             file_name=comment,
         )
 
-def run_external_script():
-    # Replace 'external_script.py' with the actual name of your external script
-    script_path = 'PublicCommentAnalysis.py'
-
-    # Run the external script using subprocess
-    subprocess.run(['python', script_path])
-
 
 #first we will create the page
 def main():
@@ -133,10 +126,6 @@ def main():
     index = 'index.html'
     indexHTML = url + index
     OpenRules = get_open_rules(indexHTML)
-
-    
-    run_external_script()
-
 
     SelectedRule = st.sidebar.selectbox("Select The Ruleset For the Public Comments", OpenRules)
     

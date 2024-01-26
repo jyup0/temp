@@ -1,0 +1,646 @@
+text
+"April 12, 2021"
+Chief  Counsel’ s Office
+Attn: Comment Processing
+Office of  the Comptroller of  the Cur rency
+"400 7th Street SW , Suite 3E-218"
+"W ashington, DC 20219"
+T he Honorable Ann E. Misbac k
+"Secretar y , Board of  Go v er nors of  the F ederal"
+R eser v e System
+20th Street and Constitution A v en ue NW
+"W ashington, DC 20551"
+T he Honorable J ames P . Sheesly
+Assistant Ex ecuti v e Secretar y
+Attn: Comments
+F ederal De posit Insurance Cor poration
+550 17th Street NW
+"W ashington, DC 20429"
+R e:
+Computer-Security Incident Notifica tion R equirements
+for Banking Or ganiza tions and
+Their Bank Ser vice Pr ovider s
+(
+OCC:
+"Doc k et ID OCC-2020-0038,"
+RIN 1557-AF02;
+Federal
+Reserve System:
+"Doc k et No . R-1736, RIN 7100-AF;"
+FDIC:
+RIN 3064-AF59)
+Google Cloud w elcomes the oppor tunity to pro vide comments
+on the proposed r ulemaking entitled
+“Computer -Security Incident Notification R equirements
+for Banking Org anizations and T heir Bank
+Ser vice Pro viders . ”
+"(26 F ed. R eg . 2299) (J an uar y 12,"
+2021) (“Incident Notification R equirements”)
+issued jointly b y the Office of  the Comptroller of
+"the Cur rency , F ederal De posit Insurance"
+"Cor poration, and Board of  Go v er nors of  the F ederal"
+R eser v e System (collecti v ely refer red to herein
+as the “Banking R egulators”).
+I.
+Intr oduction
+Effecti v e incident response is critical for the financial
+ser vices industr y .  As a pro vider of  cloud
+"ser vices to the financial ser vices industr y , Google"
+Cloud maintains a rig orous process for prev enting
+and managing data incidents as par t of  our o v erall
+security and pri v acy prog ram.  W e also believ e
+1
+strongly in suppor ting the establishment of  effecti v e regulator y framew orks g o v er ning incident
+response .  T he Incident Notification R equirements
+proposed b y the Banking R egulators are an
+impor tant initiati v e in that reg ard.
+W e offer belo w some responses to the questions presented
+b y the Banking R egulators reg arding the
+proposed Incident Notification R equirements and the
+state of  pla y on incident response in the
+industr y .  A n umber of  high lev el principles infor m
+our responses:
+1.
+An impor tant aspect of  an effecti v e incident response
+process is ensuring that tr ue
+positi v es/material incidents are f lag g ed to affected
+customers and that these are not
+dro wned out b y false positi v es/non-material incidents .
+"T his helps bank ser vice pro viders ,"
+"banking org anizations , and, ultimately , regulators"
+focus on the incidents that matter and not
+expend resources on false or
+de minimis
+matters .
+2.
+Some amount of  reasonable in v estig ation is usually
+required to distinguish tr ue
+positi v es/material incidents from false positi v es/non-material
+incidents .
+3.
+V oluntar y fora for infor mation sharing about threats/incidents
+are impor tant and should be
+"considered, instead of  incident notification, for"
+pur poses of  raising g eneral industr y
+a w areness and sensiti vity .
+Google Cloud offers belo w a n umber of  sug g estions
+to shape the Incident Notification
+R equirements in line with these principles .
+II.
+R esponses to Questions Pr esented
+1.
+How should the definition of  ‘‘computer-security incident’’
+"be modified, if  at all? F or"
+"example , should it include onl y occur rences tha t result"
+in actual har m to the
+"confidentiality , integrity , or availability of  an"
+infor mation system or the infor mation
+"the system pr ocesses , stores , or transmits? Should"
+it include onl y occur rences tha t
+"constitute an actual viola tion of  security policies ,"
+"security pr ocedures , or acce ptable use"
+policies?
+T he proposed Incident Notification R equirements define
+“computer -security incident” as “an
+occur rence that: (1) results in actual or potential
+"har m to the confidentiality , integ rity , or a v ailability"
+of  an infor mation system or the infor mation that the
+"system processes , stores , or transmits; or (2)"
+constitutes a violation or imminent threat of  violation
+"of  security policies , security procedures , or"
+acce ptable use policies . ”  Under the proposed Incident
+"Notification R equirements , a banking"
+org anization recei ving notifications of  “computer -security
+incidents” from a bank ser vice pro vider
+"2m ust deter mine whether the incident rises to the lev el of  a “notification incident” and, if  it does ,"
+m ust re por t the incident to the org anization ’ s primar y Banking R egulator .
+1
+A n umber of  elements mak e the definition of  “computer -security
+incident” in the Incident
+Notification R equirements extremely broad and could
+result in frequent and v oluminous re por ting
+"b y bank ser vice pro viders . Specifically , the Incident"
+Notification R equirements:
+●
+Encompass not only those occur rences that ha v e any
+"actual har m, but also any occur rences"
+that ha v e the
+potential
+to cause har m to infor mation
+or infor mation systems; and
+●
+Encompass
+violations
+as w ell as
+imminent thr eat of
+violations
+of
+"security policies , security pr ocedur es"
+or
+acce ptab le use policies
+.
+Google Cloud appreciates that this definition of  “computer -security
+incident” needs to be read in
+the context of  the additional languag e in the Incident
+Notification R equirements specifying that the
+banking ser vice pro vider need notify the customer
+only of  any “computer -security incident that it
+"believ es in g ood faith could disr upt, deg rade , or"
+impair ser vices . . . for four or more hours . ”  W hile
+the four -hour languag e ma y ha v e been included in an
+effor t to add a materiality element to the r ule
+"and, thus , constrain the scope of  notifications that"
+"w ould need to be made , it is not clear that the"
+languag e will in fact ha v e that effect.
+"Impor tantly , the definition of  computer -security incident"
+relates to occur rences that ha v e actual or
+potential impacts on
+data
+","
+systems
+", or"
+security policies
+","
+security pr ocedur es
+", or"
+acce ptab le use policies
+.
+"Ho w ev er ,"
+"the four -hour languag e relates to disr uption, deg radation,"
+or impair ment of
+ser vices
+.  T he mismatc h in
+scope of  the tw o sets of  pro visions mak es it difficult
+to understand whic h incidents w ould in fact
+need to be notified to customers .
+T he breadth of  the categ ories included in the definition
+of  “computer security incident” and the lac k
+of  an effecti v e materiality requirement will lik ely
+result in an extensi v e v olume of  notifications being
+"g enerated from bank ser vices pro viders to bank customers ,"
+whic h could ha v e significant unintended
+consequences .
+Bank ser vice pro viders’ attention and resources w ould
+be focused on pro viding notifications that
+"often will not be material, considering the kinds"
+of  “notification ev ents” that are ultimately of
+"concer n to the Banking R egulators , rather than on"
+deter mining impact and designing remediations .
+"Moreo v er , bank customers will be put in the position"
+of  ha ving to sor t through larg e v olumes of
+notifications from (lik ely n umerous) bank ser vice
+pro viders to mak e deter minations of  whether they
+1
+"A  “ n o t i f i c a t i o n  i n c i d e n t ”  i s  d e f i n e d  a s  a n  i n c i d e n t  t h a t  t h e  o r g a n i z a t i o n  b e l i e v e s  i n  g o o d  f a i t h  c o u l d  m a t e r i a l l y  d i s r u p t ,"
+"d e g r a d e ,  o r  i m p a i r —  ( 1 )  T h e  a b i l i t y  o f  t h e  b a n k i n g"
+"o r g a n i z a t i o n  t o  c a r r y  o u t  b a n k i n g  o p e r a t i o n s ,  a c t i v i t i e s ,"
+"o r  p r o c e s s e s ,"
+o r  d e l i v e r  b a n k i n g  p r o d u c t s  a n d  s e r v i c e s  t o  a  m a t e r i a l
+"p o r t i o n  o f  i t s  c u s t o m e r  b a s e ,  i n  t h e  o r d i n a r y  c o u r s e"
+o f  b u s i n e s s ;
+"( 2 )  A n y  b u s i n e s s  l i n e  o f  a  b a n k i n g  o r g a n i z a t i o n ,  i n c l u d i n g"
+"a s s o c i a t e d  o p e r a t i o n s ,  s e r v i c e s ,  f u n c t i o n s  a n d  s u p p o r t ,"
+a n d
+"w o u l d  r e s u l t  i n  a  m a t e r i a l  l o s s  o f  r e v e n u e ,  p r o f i t ,"
+o r  f r a n c h i s e  v a l u e ;  o r  ( 3 )  T h o s e  o p e r a t i o n s  o f  a
+"B a n k i n g  o r g a n i z a t i o n ,"
+"i n c l u d i n g  a s s o c i a t e d  s e r v i c e s ,  f u n c t i o n s  a n d  s u p p o r t ,"
+"a s  a p p l i c a b l e ,  t h e  f a i l u r e  o r  d i s c o n t i n u a n c e  o f  w h i c h"
+w o u l d  p o s e  a
+t h r e a t  t o  t h e  f i n a n c i a l  s t a b i l i t y  o f  t h e  U n i t e d  S t a t e s . ”
+"3rise to the lev el of  a “notification incident, ” resulting in increasing compliance burdens on the bank"
+ser vice pro viders and a g ro wing prospect that tr ue
+notification incidents will be lost in the ha ystac k.
+T o a v oid these kinds of  unintended consequences and
+to better tailor the Incident Notification
+"R equirements to address the concer ns identified, Google"
+Cloud urg es the Banking R egulators to
+consider a few modifications:
+●
+Include only occur rences that result in actual har m
+.
+Occur rences that only ha v e the
+potential to cause har m should be ex cluded from the scope of  notifications required from
+"the bank ser vice pro viders , although the pro viders"
+should contin ue to monitor these ev ents .
+T he fact that an ev ent has not resulted in actual
+data/systems compromise is evidence that
+the bank ser vice pro viders’ controls are operating
+as intended and that escalation to the
+Banking R egulators is unnecessar y .  Making these occur rences
+re por table w ould significantly
+"increase the operational burden on all in v olv ed par ties ,"
+including banking customers (who
+w ould be recei ving ex cessi v e v olumes of  non-actionable
+"infor mation), without a clear"
+benefit.
+Nonetheless . financial institutions and their pro viders
+should contin ue infor mation sharing
+"and ex c hanging best practices , including with respect"
+to unsuccessful incidents as w ell as
+ag g reg ated post-mor tems on addressed attac ks .  T he
+Banking R egulators should facilitate
+suc h ex c hang e through relev ant v oluntar y fora.
+●
+Eliminate the se parate re por ting categ or y for security
+"policies , security procedures , and"
+acce ptable use policies
+:  It is difficult to concei v e
+of  a “violation or imminent threat of
+"violation of  security policies , security procedures ,"
+or acce ptable use policies” ha ving the kind
+of  material impacts that could result in a “notification
+ev ent” unless they first ha v e some
+impact on customer data or on infor mation systems .
+T his is par ticularly tr ue of  “acce ptable
+use policies” that often include requirements entirely
+unrelated to security .  Including
+"“security policies , security procedures , or acce ptable"
+use policies” as an additional re por ting
+categ or y expands the scope of  re por table “computer -security
+"incidents , ” and hence the"
+"v olume of  notifications , without clear benefit.  T he"
+requirement to re por t occur rences that
+result in har m to data/systems should capture all
+material incidents .
+●
+Establish Materiality R equirements Specific to Eac h
+T ype of  R e por table Occur rence
+:  T he
+pro vision clarifying that the banking ser vice pro vider
+need notify the customer only of  any
+“computer -security incident that it believ es in g ood
+"faith could disr upt, deg rade , or impair"
+ser vices . . . for four or more hours” is helpful
+in establishing a “materiality” boundar y for
+"some cases -- specifically , those in whic h the primar y"
+impact of  an occur rence is on the
+a v ailability
+of  infor mation or an infor mation system.
+In the case of  occur rences that impact
+the confidentiality or integ rity of  infor mation or
+"the infor mation system, ho w ev er , the four"
+hour pro vision ma y not ser v e as an effecti v e measure
+"of  materiality .  Consider , for example , a"
+h ypothetical breac h that results in significant data
+exfiltration but not in any cognizable
+impact on the a v ailability of  the ser vice being pro vided.
+4Google Cloud urg es the Banking R egulators to consider dev eloping alter nati v e materiality
+criteria for these situations .  T hese criteria should tak e into account the different types of
+"bank ser vice pro viders and, cr ucially , what infor mation"
+will and will not be a v ailable to them
+"when making the assessment.  F or example , for pri v acy"
+"reasons , a cloud ser vice pro vider"
+supplying infrastr ucture-as-a-ser vice to a banking
+org anization ma y ha v e little visibility into
+the impact that an incident will ha v e on the banking
+"org anization.  In that situation, shaping"
+the materiality criteria in ter ms of  the impact on
+the banking org anization w ould be
+"ineffecti v e and, ag ain, lik ely to lead to o v er -re por ting ."
+"Rather , to the g reatest extent possible ,"
+materiality should be based on agnostic criteria that
+can be applied ev en b y third par ties in
+"suc h a situation -- for example , en umerating the specific"
+kinds of  har ms that are
+"encompassed b y the pro vision (e .g ., “accidental or"
+"unla wful destr uction, loss , alteration,"
+"unauthorized disclosure of , or access to , data”)."
+W e believ e these modifications could help ac hiev e
+a better balance betw een the scope of  re por ting
+"(and, in par ticular , the critical shared interest"
+in a v oiding o v er -re por ting) and ensuring that critical
+and material incident infor mation is g etting to banking
+org anizations and to regulators .
+2.
+How should the 36-hour timeframe for notifica tion
+"be modified, if  at all, and w hy?"
+Should it be made shor ter or long er? Should it star t
+at a dif ferent time? Should the
+timeframe be modified for cer tain types of  notifica tion
+incidents or banking
+"organiza tions (for e xample , should banks with total"
+assets of  less than $10 billion
+have a dif ferent timeframe)?
+Although the 36-hour timeframe applies to notifications
+b y banking org anizations of  “notification
+"incidents” to their primar y Banking R egulator , not"
+notifications of  “computer security incidents” b y
+"bank ser vice pro viders to their bank customers , Google"
+Cloud appreciates the recognition b y the
+Banking R egulators that a banking org anization is
+unlik ely to “be able to deter mine that a
+notification incident has occur red immediately upon
+becoming a w are of  a computer security
+incident. ”  T he Banking R egulators note that “a banking
+org anization w ould tak e a reasonable
+amount of  time to deter mine that it has experienced
+a notification incident” and that “only once the
+banking org anization has made suc h a deter mination
+w ould the requirement to re por t within 36
+hours begin. ”
+Ensuring that the Notification R equirements allo w
+an oppor tunity for reasonable in v estig ation is
+impor tant to helping ensure that material incidents
+are f lag g ed to the regulators and are not
+obfuscated b y an inf lux of  false positi v es or non-material
+matters .  Google Cloud urg es the Banking
+R egulators to also apply the same rationale to the
+notification requirements that apply to the
+notification of  “computer -security incidents” b y bank
+ser vice pro viders to their banking customers
+and to ensure that sufficient time for in v estig ation
+is built into that requirement.
+See
+response to
+Questions 3 and 6 belo w .
+3.
+Is the pr oposed requirement tha t banking or ganiza tions
+and bank ser vice pr ovider s
+notify the appr opria te par ty when they ‘‘believe in
+good faith’’ tha t they are
+experiencing or have e xperienced a notifica tion incident
+"or computer-security incident,"
+"as applicable , sufficientl y clear such tha t banking"
+organiza tions and bank ser vice
+5provider s under stand w hen they should pr ovide notice? Ho w should the ‘‘believes in
+"good faith’’ standard be modified, if  at all? F or"
+"example , should the standard be"
+‘‘reasonabl y believes’’ for either banking or ganiza tions
+or bank ser vice pr ovider s?
+T he proposed Incident Notification R equirements specify
+that a bank ser vice pro vider notify an
+affected banking org anization customer “immediately
+after the bank ser vice pro vider experiences a
+computer -security incident that it believ es in g ood
+"faith could disr upt, deg rade , or impair ser vices"
+pro vided . . . for four or more hours . ”  Google Cloud
+suppor ts the use of  the ter m “believ es in g ood
+faith” to modify the notification requirement in this
+context.
+One of  the v er y first ste ps in Google Cloud’ s incident
+"response is conducting, as quic kly as possibly ,"
+a triag e assessment of  the incident and assessing
+its sev erity (whic h ma y be adjusted as more
+infor mation is kno wn).  Google Cloud’ s customer notifications
+are tied to its best effor ts
+assessments of  these issues based on the infor mation
+a v ailable to it.  T he nature of  the “g ood faith”
+"standard is suc h that it recognizes that, often, the"
+infor mation upon whic h assessments are made is
+c hanging and incomplete (especially at early stag es
+of  incident response) and that an assessment of
+sufficiency needs to tak e this context into account.
+"By contrast, a “reasonably believ es” standard could"
+introduce too m uc h uncer tainty and in vite
+"second-guessing of  decisions that are , b y necessity ,"
+made quic kly and potentially without k ey facts
+"that are only kno wn later , incenti vizing proph ylactic"
+o v er -re por ting that will not benefit bank ser vice
+"pro viders , their banking org anization customers , or"
+the Banking R egulators .
+"As discussed belo w in response to Question 6, ho w ev er ,"
+"the str ucture of  the sentence , and in"
+par ticular the phrase “immediately after the bank
+ser vice pro vider experiences a computer -security
+incident” introduce uncer tainty as to the exact timeframe
+that is applicable to the notification
+pro vided b y the bank ser vice pro vider .  F or the reasons
+"discussed in that response , Google Cloud"
+urg es the Banking R egulators to consider using languag e
+other than “immediately after . ”  Google
+"Cloud urg es the Banking R egulators to consider using,"
+"instead, languag e that is more in line with the"
+notion that bank ser vice pro viders need to be able
+to mak e a g ood faith assessment of  impact
+"follo wing an occur rence and that, in many cases , the"
+infor mation ma y not be a v ailable to mak e suc h
+an assessment “immediately” after an occur rence .
+4.
+Do existing contracts betw een banking or ganiza tions
+and bank ser vice pr ovider s
+alread y have pr ovisions tha t would allo w banking or ganiza tions
+to meet the pr oposed
+notifica tion incident requirements?
+T he proposed notification incident requirements do
+"not align entirely with existing approac hes , in"
+par ticular when it comes to ev ents impacting confidentiality/integ rity
+(as opposed to a v ailability).
+T herefore pro visions in existing contracts are unlik ely
+to fully address the proposed requirements .
+F or instance:
+6●
+"for the reasons noted in the response to Question 1 abo v e , in our experience pro viders do"
+"not in practice notify customers of  potential har m,"
+violations of  security policies etc that do
+not result in any har m or violations of  security policies
+"etc .  In par ticular , gi v en the usual"
+"content of  acce ptable use policies , it is not typical"
+to notify a customer of  an acce ptable use
+policy violation b y another customer absent any har m
+to the customer being notified.
+●
+for the reasons noted in the response to Question
+"6 belo w , in our experience pro viders are"
+typically not able to notify customers immediately
+after an ev ent that impacts the
+confidentiality/integ rity of  infor mation of  infor mation
+"systems .  T ypically , pro viders will"
+commit to doing this promptly or without undue dela y
+after an incident has been
+in v estig ated and declared.
+"Although contracts v ar y , our experience is that pro viders"
+"do , ho w ev er , pro vide notification of  ev ents"
+that actually impact the a v ailability of  infor mation
+"and infor mation systems .  Ag ain, although this is"
+"done promptly , it is usually not possible to do so"
+“immediately” gi v en the need for reasonable
+in v estig ation (as recognized b y the Banking R egulators
+in connection with the “notification
+incident” timelines --
+see
+Question 2 abo v e).
+"Finally , our experience is that m ulti-tenant contexts ,"
+"lik e public cloud ser vices contracts , typically"
+utilize one-to-many tools suc h as dashboards to comm unicate
+ser vice a v ailability ev ents and scalable
+1:1 tools suc h as emails/suppor t tic k ets to comm unicate
+ev ents impacting customer data.
+5.
+Should the pr oposed r ule for bank ser vice pr ovider s
+require bank ser vice pr ovider s to
+notify all banking or ganiza tion customer s or onl y
+those af fected b y a computer-security
+incident under the pr oposed r ule?
+Google Cloud urg es the Banking R egulators to limit
+the scope of  the notification requirement to
+banking org anization customers affected b y a computer -security
+incident.  Expansion to include all
+banking org anization customers could (1) g enerate
+significant confusion about the scope and impact
+"of  an incident, potentially consuming bank org anization"
+resources unnecessarily; (2) dra w bank
+ser vice pro vider resources a w a y from critical incident
+"identification, coordination, and resolution"
+acti vities; and (3) result in significantly more noise/false
+positi v es being re por ted to banking
+regulators .
+If  the intent behind notifying a broader g roup w ere
+"to facilitate infor mation sharing, there ma y be"
+better w a ys to do so that w ould not ha v e the neg ati v e
+"impacts described abo v e .  F or example , the"
+"broader g roup of  financial institutions , pro viders"
+and Banking R egulators could contin ue
+infor mation sharing and ex c hanging best practices
+through relev ant v oluntar y fora.
+6.
+Within w hat timeframe should bank ser vice pr ovider s
+provide notifica tion to banking
+organiza tions? Is immedia te notifica tion after e xperiencing
+a disr uption in ser vices
+provided to af fected banking or ganiza tion customer s
+and to re port to those
+"organiza tions reasonable? If  not, w hat is the appr opria te"
+amount of  time for a bank
+service pr ovider to deter mine it has e xperienced a
+material disr uption in ser vice tha t
+"impacts its banking or ganiza tion customer s, and w hy?"
+"7Under the proposed Incident Notification R equirements ,"
+a bank ser vice pro vider m ust notify eac h
+affected banking org anization customer “immediately
+after the bank ser vice pro vider experiences a
+computer security incident that it believ es in g ood
+"faith could disr upt, deg rade , or impair ser vices"
+. . .
+for four or more hours . ”
+T he ter m “immediately after” sug g ests that no time
+could ha v e elapsed betw een when a
+computer -security incident occur red and when notification
+"has to happen.  Ho w ev er , as discussed in"
+"response to Question 3 abo v e , there is almost alw a ys"
+some period of  time in whic h facts need to be
+g athered in order to mak e an infor med assessment (ev en
+"if  preliminar y) as to nature , scope , and"
+impact of  an incident.  Making a deter mination “in
+g ood faith” that a computer -security incident
+"“could disr upt, deg rade , or impair ser vices pro vided"
+. . . for four or more hours” (or ex ceeds some
+other materiality threshold) ma y not be possible “immediately
+after” the bank ser vice experiences a
+computer -security ev ent. ”
+"As suc h, the use of  the ter m “immediate” creates confusion"
+as to the point in time at whic h a bank
+ser vice pro vider needs to pro vide notice .  It is notable
+"in this reg ard, that both this question (about"
+the effect of  the “immediately after” languag e) and
+Question 3 abo v e (about the effect of  the “g ood
+faith” languag e) both relate to the timeframes that
+apply to the bank ser vice pro vider .  T he tw o
+phrases ha v e different time connotations and it is
+unclear whic h is controlling .
+"T o clarify the applicable timeframe , Google Cloud"
+urg es the Banking R egulators to consider
+alter nati v e languag e that con v eys that notification
+should occur “promptly” and “without undue
+dela y” once a g ood faith deter mination is made as
+to materiality (whether the four hour standard or
+some other).  T his should con v ey the sense of  urg ency
+without sug g esting that bank ser vice
+pro viders submit notifications without any attempt
+to collect the kind of  infor mation that will help
+deter mine whether the computer -security incident is
+one that is material.
+"Impor tantly , as discussed in response to Question"
+"2, the Banking R egulators recognize the"
+impor tance of  allo wing time for reasonable in v estig ation
+in the context of  notifications b y banking
+org anizations of  “notification incidents” to their
+"primar y Banking R egulator .  Specifically , the"
+Banking R egulators ac kno wledg e that a banking org anization
+is unlik ely to “be able to deter mine
+that a notification incident has occur red immediately
+upon becoming a w are of  a computer security
+incident. ”  T he Banking R egulators note that “a banking
+org anization w ould tak e a reasonable
+amount of  time to deter mine that it has experienced
+a notification incident” and that “only once the
+banking org anization has made suc h a deter mination
+w ould the requirement to re por t within 36
+hours begin. ”  Google Cloud urg es the Banking R egulators
+to apply the same rationale to the
+notification requirements that apply to the notification
+of  “computer -security incidents . ”
+7.
+The ag encies under stand tha t man y existing contracts
+between banking or ganiza tions
+and bank ser vice pr ovider s contain notifica tion pr ovisions
+regarding ma terial incidents
+"8and tha t, generall y, bank ser vice pr ovider s use automa ted systems to notify banking"
+organiza tions of  service disr uptions . The ag encies
+are seeking infor mation on ho w
+bank ser vice pr ovider s currently notify banking or ganiza tions
+of service disr uptions
+under e xisting contracts betw een bank ser vice pr ovider s
+and banking or ganiza tions .
+Do those contracts contempla te the pr ovision of  notice
+to at least two indi viduals a t an
+affected banking or ganiza tion? Is the method of  notice
+specified in e xisting contracts
+"(for e xample , email, tele phone , etc.) suf ficient to"
+allow bank ser vice pr ovider s to
+provide notice of  computer security incidents to a t
+least two indi viduals a t affected
+"banking or ganiza tions? If  not, ho w best could the"
+requirement for bank ser vice
+provider s to notify a t least two indi viduals a t affected
+banking or ganiza tions be
+achieved most ef ficientl y and cost ef fectively for
+both par ties?
+Google Cloud notifies customers of  data incidents
+b y deli v ering notification(s) to customers
+electronically .  Ser vice disr uptions are notified
+on a public dashboard (customer can enable RSS feed
+"aler ts) and, de pending on sev erity and whether the"
+customer has subscribed to a qualifying suppor t
+"lev el, ma y also be comm unicated directly to affected"
+customers via a suppor t tic k et or notification
+email address supplied b y customers .
+Google Cloud urg es the Banking R egulators to per mit
+use of  suc h electronic means to pro vide
+notification.  T his is critical to allo w notifications
+at scale .  T o ensure that more than one indi vidual
+"recei v es the notification, banking org anizations can"
+ensure that the transmission is accessible b y
+"m ultiple indi viduals (e .g ., b y routing notification"
+email addresses to an alias with more than one
+"indi vidual recipient, b y ensuring m ultiple indi viduals"
+enable RSS feed aler ts).
+8.
+Describe cir cumstances in w hich a bank ser vice pr ovider
+would become a ware of  a
+material disr uption tha t could be a notifica tion incident
+for banking or ganiza tion
+customer s but the banking or ganiza tion customer s would
+not be a ware of  the incident.
+Would it be over ly burdensome to cer tain bank ser vice
+"provider s, such as smaller bank"
+"service pr ovider s, to pr ovide notice of  material disr uptions ,"
+"degrada tions , or"
+impair ments to their af fected banking or ganiza tion
+"customer s and, if  so, why?"
+Banking org anization customers are lik ely to become
+a w are of  a material disr uption that has an
+impact on a v ailability of  data/systems early on in
+"an incident, potentially at the same time as a bank"
+"ser vice pro vider .  Ho w ev er , this ma y not be tr ue of"
+a material disr uption that has an impact
+primarily on confidentiality or integ rity of  data.
+9III. Conclusion
+Google Cloud appreciates the oppor tunity to pro vide feedbac k on the proposed Incident
+Notification R equirements .  W e look forw ard to contin uing to w ork with the Banking R egulators as
+the proposal is finalized and implemented.
+"Sincerely ,"
+Behnaz L. Kibria
+Senior P olicy Counsel
+1 0
+""
