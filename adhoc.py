@@ -359,6 +359,21 @@ def UpdatePublicComments(SelectedRule):
         else:
             print("comment already downloaded")
 
+def CleanResults(rule):
+    CleanedRule = CleanRule(rule)
+    DirPath = "temp/" + CleanedRule
+    DirRPath = DirPath+"/Results/"
+    DirNPath = DirPath+"/New/"
+
+    for file in os.listdir(DirRPath):
+        print(file)
+        df = pd.read_csv(DirRPath+file)
+        df_new = pd.DataFrame(df.iloc[:, 1])
+        df_new = df_new.drop_duplicates()
+        df_new.to_csv(DirNPath+file, index=False)
+
+
+
 def main():
     #create variable to hold the main url
 
@@ -372,9 +387,10 @@ def main():
     #this will be the guiless functions
     #1. check if any new rules have been added
     print("Starting Rule: " + rule)
-    UpdateRuleDirectory(rule)
-    UpdatePublicComments(rule)
-    UpdateAnalyzedComments(rule)
+    #UpdateRuleDirectory(rule)
+    #UpdatePublicComments(rule)
+    #UpdateAnalyzedComments(rule)
+    CleanResults(rule)
     print(rule + " Completed!")
 
 if __name__ == "__main__":
