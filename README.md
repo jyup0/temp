@@ -1,1 +1,3 @@
 ![image](https://github.com/jyup0/temp/assets/58010127/fadd7f7f-28f4-416e-b5bf-a7672fb2f8ec)
+
+('board risk institution guideline proposed fdic director ', 110), ('fdic institution guideline risk director proposed board ', 110), ('management risk institution board proposed guideline director ', 108), ('guideline board bank institution risk director management ', 107), ('guideline bank board institution risk management director ', 107), ('board guideline bank institution management risk director ', 107), ('risk management board proposed institution guideline bank ', 104), ('guideline bank institution risk board management fdic ', 100), ('guideline bank board institution management fdic risk ', 100)]
