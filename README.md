@@ -12,3 +12,7 @@ institution ', 201)]
 [('ignore ', 1560), ('guideline proposed bank board ', 1107), ('risk management institution board ', 532), ('bank proposal fdic community ', 512), ('bank board guideline director 
 ', 453), ('bank proposal board director ', 399), ('board director bank proposal ', 399), ('board risk institution management ', 399), ('risk board institution management ', 399), 
 ('guideline board proposed risk ', 396)]
+
+('new management person particularly onerous occ qualified modify largest liability ', 36), ('institution standard fdic proposed board covered risk management 
+director guideline ', 20), ('bank board fdic proposal director state guideline law institution corporate ', 14), ('bank board proposed risk director guideline fdic would institution covered ', 13), ('november message pm overall october request monday inﬂaɵon lange rin ', 12), ('office ofstate new nw ofany modify ofspringfield paiticularly orocc message ', 
+12), ('board governance proposal director institution bank corporate fdic law state ', 11), ('risk bank board proposed fdic guideline institution would management director ', 11), ('proposed bank fdic board risk institution director guideline would management ', 11)]
